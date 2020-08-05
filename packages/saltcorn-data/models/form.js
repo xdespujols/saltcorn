@@ -80,7 +80,9 @@ class Form {
 
 Form.contract = {
   variables: {
-    fields: is.array(is.or(is.class("Field"), is.class("FieldRepeat"))),
+    fields: is.array(
+      is.or(is.class("Field"), is.class("FieldRepeat"), is.class("RadioGroup"))
+    ),
     values: is.obj(),
     errors: is.obj(),
     action: is.maybe(is.str),

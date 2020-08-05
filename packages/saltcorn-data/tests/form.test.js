@@ -1,6 +1,7 @@
 const Table = require("../models/table");
 const Field = require("../models/field");
 const FieldRepeat = require("../models/fieldrepeat");
+const RadioGroup = require("../models/radiogroup");
 const Form = require("../models/form");
 const { renderForm } = require("@saltcorn/markup");
 
@@ -168,6 +169,65 @@ describe("String form with validator success", () => {
 
   form.validate({ name: "Simon" });
   expect(form.values.name).toBe("Simon");
+  expect(form.errors).toStrictEqual({});
+  expect(form.hasErrors).toBe(false);
+});
+
+const rgForm = () =>
+  new Form({
+    action: "/",
+    fields: [
+      new RadioGroup({
+        name: "source",
+        type: "String",
+        groups: [
+          {
+            value: "github",
+            label: "GitHub",
+            fields: [
+              new Field({
+                name: "account",
+                label: "Account",
+                type: "String"
+              }),
+              new Field({
+                name: "repo",
+                label: "Repository",
+                type: "String"
+              })
+            ]
+          },
+          {
+            value: "internet",
+            label: "The Internet",
+            fields: [
+              new Field({
+                name: "url",
+                label: "URL",
+                type: "String"
+              })
+            ]
+          }
+        ]
+      })
+    ]
+  });
+
+describe("RadioGroup form", () => {
+  const form = rgForm();
+  //const html = renderForm(form, "");
+  //expect(html.includes("<form")).toBe(true);
+
+  form.validate({
+    source: "github",
+    account: "glutamate",
+    repo: "saltcorn",
+    url: "foo"
+  });
+
+  expect(form.values.source.source).toBe("github");
+  expect(form.values.source.account).toBe("glutamate");
+  expect(form.values.url).toBe(undefined);
   expect(form.errors).toStrictEqual({});
   expect(form.hasErrors).toBe(false);
 });
