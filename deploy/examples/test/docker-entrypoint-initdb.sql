@@ -1,5 +1,5 @@
 --
--- PostgreSQL database dump
+-- saltcornQL database dump
 --
 
 -- Dumped from database version 13.0 (Debian 13.0-1.pgdg100+1)
@@ -21,7 +21,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- Name: _sc_config; Type: TABLE; Schema: public; Owner: postgres
+-- Name: _sc_config; Type: TABLE; Schema: public; Owner: saltcorn
 --
 
 CREATE TABLE public._sc_config (
@@ -30,10 +30,10 @@ CREATE TABLE public._sc_config (
 );
 
 
-ALTER TABLE public._sc_config OWNER TO postgres;
+ALTER TABLE public._sc_config OWNER TO saltcorn;
 
 --
--- Name: _sc_errors; Type: TABLE; Schema: public; Owner: postgres
+-- Name: _sc_errors; Type: TABLE; Schema: public; Owner: saltcorn
 --
 
 CREATE TABLE public._sc_errors (
@@ -49,10 +49,10 @@ CREATE TABLE public._sc_errors (
 );
 
 
-ALTER TABLE public._sc_errors OWNER TO postgres;
+ALTER TABLE public._sc_errors OWNER TO saltcorn;
 
 --
--- Name: _sc_errors_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: _sc_errors_id_seq; Type: SEQUENCE; Schema: public; Owner: saltcorn
 --
 
 CREATE SEQUENCE public._sc_errors_id_seq
@@ -64,17 +64,17 @@ CREATE SEQUENCE public._sc_errors_id_seq
     CACHE 1;
 
 
-ALTER TABLE public._sc_errors_id_seq OWNER TO postgres;
+ALTER TABLE public._sc_errors_id_seq OWNER TO saltcorn;
 
 --
--- Name: _sc_errors_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: _sc_errors_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: saltcorn
 --
 
 ALTER SEQUENCE public._sc_errors_id_seq OWNED BY public._sc_errors.id;
 
 
 --
--- Name: _sc_fields; Type: TABLE; Schema: public; Owner: postgres
+-- Name: _sc_fields; Type: TABLE; Schema: public; Owner: saltcorn
 --
 
 CREATE TABLE public._sc_fields (
@@ -93,10 +93,10 @@ CREATE TABLE public._sc_fields (
 );
 
 
-ALTER TABLE public._sc_fields OWNER TO postgres;
+ALTER TABLE public._sc_fields OWNER TO saltcorn;
 
 --
--- Name: _sc_fields_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: _sc_fields_id_seq; Type: SEQUENCE; Schema: public; Owner: saltcorn
 --
 
 CREATE SEQUENCE public._sc_fields_id_seq
@@ -108,17 +108,17 @@ CREATE SEQUENCE public._sc_fields_id_seq
     CACHE 1;
 
 
-ALTER TABLE public._sc_fields_id_seq OWNER TO postgres;
+ALTER TABLE public._sc_fields_id_seq OWNER TO saltcorn;
 
 --
--- Name: _sc_fields_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: _sc_fields_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: saltcorn
 --
 
 ALTER SEQUENCE public._sc_fields_id_seq OWNED BY public._sc_fields.id;
 
 
 --
--- Name: _sc_files; Type: TABLE; Schema: public; Owner: postgres
+-- Name: _sc_files; Type: TABLE; Schema: public; Owner: saltcorn
 --
 
 CREATE TABLE public._sc_files (
@@ -134,10 +134,10 @@ CREATE TABLE public._sc_files (
 );
 
 
-ALTER TABLE public._sc_files OWNER TO postgres;
+ALTER TABLE public._sc_files OWNER TO saltcorn;
 
 --
--- Name: _sc_files_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: _sc_files_id_seq; Type: SEQUENCE; Schema: public; Owner: saltcorn
 --
 
 CREATE SEQUENCE public._sc_files_id_seq
@@ -149,17 +149,17 @@ CREATE SEQUENCE public._sc_files_id_seq
     CACHE 1;
 
 
-ALTER TABLE public._sc_files_id_seq OWNER TO postgres;
+ALTER TABLE public._sc_files_id_seq OWNER TO saltcorn;
 
 --
--- Name: _sc_files_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: _sc_files_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: saltcorn
 --
 
 ALTER SEQUENCE public._sc_files_id_seq OWNED BY public._sc_files.id;
 
 
 --
--- Name: _sc_migrations; Type: TABLE; Schema: public; Owner: postgres
+-- Name: _sc_migrations; Type: TABLE; Schema: public; Owner: saltcorn
 --
 
 CREATE TABLE public._sc_migrations (
@@ -167,10 +167,10 @@ CREATE TABLE public._sc_migrations (
 );
 
 
-ALTER TABLE public._sc_migrations OWNER TO postgres;
+ALTER TABLE public._sc_migrations OWNER TO saltcorn;
 
 --
--- Name: _sc_pages; Type: TABLE; Schema: public; Owner: postgres
+-- Name: _sc_pages; Type: TABLE; Schema: public; Owner: saltcorn
 --
 
 CREATE TABLE public._sc_pages (
@@ -184,10 +184,10 @@ CREATE TABLE public._sc_pages (
 );
 
 
-ALTER TABLE public._sc_pages OWNER TO postgres;
+ALTER TABLE public._sc_pages OWNER TO saltcorn;
 
 --
--- Name: _sc_pages_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: _sc_pages_id_seq; Type: SEQUENCE; Schema: public; Owner: saltcorn
 --
 
 CREATE SEQUENCE public._sc_pages_id_seq
@@ -199,17 +199,17 @@ CREATE SEQUENCE public._sc_pages_id_seq
     CACHE 1;
 
 
-ALTER TABLE public._sc_pages_id_seq OWNER TO postgres;
+ALTER TABLE public._sc_pages_id_seq OWNER TO saltcorn;
 
 --
--- Name: _sc_pages_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: _sc_pages_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: saltcorn
 --
 
 ALTER SEQUENCE public._sc_pages_id_seq OWNED BY public._sc_pages.id;
 
 
 --
--- Name: _sc_plugins; Type: TABLE; Schema: public; Owner: postgres
+-- Name: _sc_plugins; Type: TABLE; Schema: public; Owner: saltcorn
 --
 
 CREATE TABLE public._sc_plugins (
@@ -222,10 +222,10 @@ CREATE TABLE public._sc_plugins (
 );
 
 
-ALTER TABLE public._sc_plugins OWNER TO postgres;
+ALTER TABLE public._sc_plugins OWNER TO saltcorn;
 
 --
--- Name: _sc_plugins_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: _sc_plugins_id_seq; Type: SEQUENCE; Schema: public; Owner: saltcorn
 --
 
 CREATE SEQUENCE public._sc_plugins_id_seq
@@ -237,17 +237,17 @@ CREATE SEQUENCE public._sc_plugins_id_seq
     CACHE 1;
 
 
-ALTER TABLE public._sc_plugins_id_seq OWNER TO postgres;
+ALTER TABLE public._sc_plugins_id_seq OWNER TO saltcorn;
 
 --
--- Name: _sc_plugins_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: _sc_plugins_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: saltcorn
 --
 
 ALTER SEQUENCE public._sc_plugins_id_seq OWNED BY public._sc_plugins.id;
 
 
 --
--- Name: _sc_roles; Type: TABLE; Schema: public; Owner: postgres
+-- Name: _sc_roles; Type: TABLE; Schema: public; Owner: saltcorn
 --
 
 CREATE TABLE public._sc_roles (
@@ -256,10 +256,10 @@ CREATE TABLE public._sc_roles (
 );
 
 
-ALTER TABLE public._sc_roles OWNER TO postgres;
+ALTER TABLE public._sc_roles OWNER TO saltcorn;
 
 --
--- Name: _sc_roles_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: _sc_roles_id_seq; Type: SEQUENCE; Schema: public; Owner: saltcorn
 --
 
 CREATE SEQUENCE public._sc_roles_id_seq
@@ -271,17 +271,17 @@ CREATE SEQUENCE public._sc_roles_id_seq
     CACHE 1;
 
 
-ALTER TABLE public._sc_roles_id_seq OWNER TO postgres;
+ALTER TABLE public._sc_roles_id_seq OWNER TO saltcorn;
 
 --
--- Name: _sc_roles_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: _sc_roles_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: saltcorn
 --
 
 ALTER SEQUENCE public._sc_roles_id_seq OWNED BY public._sc_roles.id;
 
 
 --
--- Name: _sc_session; Type: TABLE; Schema: public; Owner: postgres
+-- Name: _sc_session; Type: TABLE; Schema: public; Owner: saltcorn
 --
 
 CREATE UNLOGGED TABLE public._sc_session (
@@ -291,10 +291,10 @@ CREATE UNLOGGED TABLE public._sc_session (
 );
 
 
-ALTER TABLE public._sc_session OWNER TO postgres;
+ALTER TABLE public._sc_session OWNER TO saltcorn;
 
 --
--- Name: _sc_tables; Type: TABLE; Schema: public; Owner: postgres
+-- Name: _sc_tables; Type: TABLE; Schema: public; Owner: saltcorn
 --
 
 CREATE TABLE public._sc_tables (
@@ -306,10 +306,10 @@ CREATE TABLE public._sc_tables (
 );
 
 
-ALTER TABLE public._sc_tables OWNER TO postgres;
+ALTER TABLE public._sc_tables OWNER TO saltcorn;
 
 --
--- Name: _sc_tables_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: _sc_tables_id_seq; Type: SEQUENCE; Schema: public; Owner: saltcorn
 --
 
 CREATE SEQUENCE public._sc_tables_id_seq
@@ -321,17 +321,17 @@ CREATE SEQUENCE public._sc_tables_id_seq
     CACHE 1;
 
 
-ALTER TABLE public._sc_tables_id_seq OWNER TO postgres;
+ALTER TABLE public._sc_tables_id_seq OWNER TO saltcorn;
 
 --
--- Name: _sc_tables_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: _sc_tables_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: saltcorn
 --
 
 ALTER SEQUENCE public._sc_tables_id_seq OWNED BY public._sc_tables.id;
 
 
 --
--- Name: _sc_tenants; Type: TABLE; Schema: public; Owner: postgres
+-- Name: _sc_tenants; Type: TABLE; Schema: public; Owner: saltcorn
 --
 
 CREATE TABLE public._sc_tenants (
@@ -340,10 +340,10 @@ CREATE TABLE public._sc_tenants (
 );
 
 
-ALTER TABLE public._sc_tenants OWNER TO postgres;
+ALTER TABLE public._sc_tenants OWNER TO saltcorn;
 
 --
--- Name: _sc_views; Type: TABLE; Schema: public; Owner: postgres
+-- Name: _sc_views; Type: TABLE; Schema: public; Owner: saltcorn
 --
 
 CREATE TABLE public._sc_views (
@@ -357,10 +357,10 @@ CREATE TABLE public._sc_views (
 );
 
 
-ALTER TABLE public._sc_views OWNER TO postgres;
+ALTER TABLE public._sc_views OWNER TO saltcorn;
 
 --
--- Name: _sc_views_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: _sc_views_id_seq; Type: SEQUENCE; Schema: public; Owner: saltcorn
 --
 
 CREATE SEQUENCE public._sc_views_id_seq
@@ -372,17 +372,17 @@ CREATE SEQUENCE public._sc_views_id_seq
     CACHE 1;
 
 
-ALTER TABLE public._sc_views_id_seq OWNER TO postgres;
+ALTER TABLE public._sc_views_id_seq OWNER TO saltcorn;
 
 --
--- Name: _sc_views_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: _sc_views_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: saltcorn
 --
 
 ALTER SEQUENCE public._sc_views_id_seq OWNED BY public._sc_views.id;
 
 
 --
--- Name: users; Type: TABLE; Schema: public; Owner: postgres
+-- Name: users; Type: TABLE; Schema: public; Owner: saltcorn
 --
 
 CREATE TABLE public.users (
@@ -397,10 +397,10 @@ CREATE TABLE public.users (
 );
 
 
-ALTER TABLE public.users OWNER TO postgres;
+ALTER TABLE public.users OWNER TO saltcorn;
 
 --
--- Name: users_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: users_id_seq; Type: SEQUENCE; Schema: public; Owner: saltcorn
 --
 
 CREATE SEQUENCE public.users_id_seq
@@ -412,80 +412,80 @@ CREATE SEQUENCE public.users_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.users_id_seq OWNER TO postgres;
+ALTER TABLE public.users_id_seq OWNER TO saltcorn;
 
 --
--- Name: users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: saltcorn
 --
 
 ALTER SEQUENCE public.users_id_seq OWNED BY public.users.id;
 
 
 --
--- Name: _sc_errors id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: _sc_errors id; Type: DEFAULT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_errors ALTER COLUMN id SET DEFAULT nextval('public._sc_errors_id_seq'::regclass);
 
 
 --
--- Name: _sc_fields id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: _sc_fields id; Type: DEFAULT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_fields ALTER COLUMN id SET DEFAULT nextval('public._sc_fields_id_seq'::regclass);
 
 
 --
--- Name: _sc_files id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: _sc_files id; Type: DEFAULT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_files ALTER COLUMN id SET DEFAULT nextval('public._sc_files_id_seq'::regclass);
 
 
 --
--- Name: _sc_pages id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: _sc_pages id; Type: DEFAULT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_pages ALTER COLUMN id SET DEFAULT nextval('public._sc_pages_id_seq'::regclass);
 
 
 --
--- Name: _sc_plugins id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: _sc_plugins id; Type: DEFAULT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_plugins ALTER COLUMN id SET DEFAULT nextval('public._sc_plugins_id_seq'::regclass);
 
 
 --
--- Name: _sc_roles id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: _sc_roles id; Type: DEFAULT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_roles ALTER COLUMN id SET DEFAULT nextval('public._sc_roles_id_seq'::regclass);
 
 
 --
--- Name: _sc_tables id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: _sc_tables id; Type: DEFAULT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_tables ALTER COLUMN id SET DEFAULT nextval('public._sc_tables_id_seq'::regclass);
 
 
 --
--- Name: _sc_views id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: _sc_views id; Type: DEFAULT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_views ALTER COLUMN id SET DEFAULT nextval('public._sc_views_id_seq'::regclass);
 
 
 --
--- Name: users id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: users id; Type: DEFAULT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public.users ALTER COLUMN id SET DEFAULT nextval('public.users_id_seq'::regclass);
 
 
 --
--- Data for Name: _sc_config; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: _sc_config; Type: TABLE DATA; Schema: public; Owner: saltcorn
 --
 
 COPY public._sc_config (key, value) FROM stdin;
@@ -493,7 +493,7 @@ COPY public._sc_config (key, value) FROM stdin;
 
 
 --
--- Data for Name: _sc_errors; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: _sc_errors; Type: TABLE DATA; Schema: public; Owner: saltcorn
 --
 
 COPY public._sc_errors (id, stack, message, occur_at, tenant, user_id, url, headers, body) FROM stdin;
@@ -501,7 +501,7 @@ COPY public._sc_errors (id, stack, message, occur_at, tenant, user_id, url, head
 
 
 --
--- Data for Name: _sc_fields; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: _sc_fields; Type: TABLE DATA; Schema: public; Owner: saltcorn
 --
 
 COPY public._sc_fields (id, table_id, name, label, type, reftable_name, attributes, required, is_unique, calculated, stored, expression) FROM stdin;
@@ -509,7 +509,7 @@ COPY public._sc_fields (id, table_id, name, label, type, reftable_name, attribut
 
 
 --
--- Data for Name: _sc_files; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: _sc_files; Type: TABLE DATA; Schema: public; Owner: saltcorn
 --
 
 COPY public._sc_files (id, filename, location, uploaded_at, size_kb, user_id, mime_super, mime_sub, min_role_read) FROM stdin;
@@ -517,7 +517,7 @@ COPY public._sc_files (id, filename, location, uploaded_at, size_kb, user_id, mi
 
 
 --
--- Data for Name: _sc_migrations; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: _sc_migrations; Type: TABLE DATA; Schema: public; Owner: saltcorn
 --
 
 COPY public._sc_migrations (migration) FROM stdin;
@@ -543,7 +543,7 @@ COPY public._sc_migrations (migration) FROM stdin;
 
 
 --
--- Data for Name: _sc_pages; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: _sc_pages; Type: TABLE DATA; Schema: public; Owner: saltcorn
 --
 
 COPY public._sc_pages (id, name, title, description, min_role, layout, fixed_states) FROM stdin;
@@ -551,7 +551,7 @@ COPY public._sc_pages (id, name, title, description, min_role, layout, fixed_sta
 
 
 --
--- Data for Name: _sc_plugins; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: _sc_plugins; Type: TABLE DATA; Schema: public; Owner: saltcorn
 --
 
 COPY public._sc_plugins (id, name, source, location, version, configuration) FROM stdin;
@@ -561,7 +561,7 @@ COPY public._sc_plugins (id, name, source, location, version, configuration) FRO
 
 
 --
--- Data for Name: _sc_roles; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: _sc_roles; Type: TABLE DATA; Schema: public; Owner: saltcorn
 --
 
 COPY public._sc_roles (id, role) FROM stdin;
@@ -573,7 +573,7 @@ COPY public._sc_roles (id, role) FROM stdin;
 
 
 --
--- Data for Name: _sc_session; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: _sc_session; Type: TABLE DATA; Schema: public; Owner: saltcorn
 --
 
 COPY public._sc_session (sid, sess, expire) FROM stdin;
@@ -581,7 +581,7 @@ COPY public._sc_session (sid, sess, expire) FROM stdin;
 
 
 --
--- Data for Name: _sc_tables; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: _sc_tables; Type: TABLE DATA; Schema: public; Owner: saltcorn
 --
 
 COPY public._sc_tables (id, name, min_role_read, min_role_write, versioned) FROM stdin;
@@ -589,7 +589,7 @@ COPY public._sc_tables (id, name, min_role_read, min_role_write, versioned) FROM
 
 
 --
--- Data for Name: _sc_tenants; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: _sc_tenants; Type: TABLE DATA; Schema: public; Owner: saltcorn
 --
 
 COPY public._sc_tenants (subdomain, email) FROM stdin;
@@ -597,7 +597,7 @@ COPY public._sc_tenants (subdomain, email) FROM stdin;
 
 
 --
--- Data for Name: _sc_views; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: _sc_views; Type: TABLE DATA; Schema: public; Owner: saltcorn
 --
 
 COPY public._sc_views (id, viewtemplate, name, table_id, configuration, on_root_page, min_role) FROM stdin;
@@ -605,7 +605,7 @@ COPY public._sc_views (id, viewtemplate, name, table_id, configuration, on_root_
 
 
 --
--- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: saltcorn
 --
 
 COPY public.users (id, email, password, role_id, reset_password_token, reset_password_expiry, language, disabled) FROM stdin;
@@ -613,70 +613,70 @@ COPY public.users (id, email, password, role_id, reset_password_token, reset_pas
 
 
 --
--- Name: _sc_errors_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: _sc_errors_id_seq; Type: SEQUENCE SET; Schema: public; Owner: saltcorn
 --
 
 SELECT pg_catalog.setval('public._sc_errors_id_seq', 1, false);
 
 
 --
--- Name: _sc_fields_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: _sc_fields_id_seq; Type: SEQUENCE SET; Schema: public; Owner: saltcorn
 --
 
 SELECT pg_catalog.setval('public._sc_fields_id_seq', 1, false);
 
 
 --
--- Name: _sc_files_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: _sc_files_id_seq; Type: SEQUENCE SET; Schema: public; Owner: saltcorn
 --
 
 SELECT pg_catalog.setval('public._sc_files_id_seq', 1, false);
 
 
 --
--- Name: _sc_pages_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: _sc_pages_id_seq; Type: SEQUENCE SET; Schema: public; Owner: saltcorn
 --
 
 SELECT pg_catalog.setval('public._sc_pages_id_seq', 1, false);
 
 
 --
--- Name: _sc_plugins_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: _sc_plugins_id_seq; Type: SEQUENCE SET; Schema: public; Owner: saltcorn
 --
 
 SELECT pg_catalog.setval('public._sc_plugins_id_seq', 2, true);
 
 
 --
--- Name: _sc_roles_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: _sc_roles_id_seq; Type: SEQUENCE SET; Schema: public; Owner: saltcorn
 --
 
 SELECT pg_catalog.setval('public._sc_roles_id_seq', 1, false);
 
 
 --
--- Name: _sc_tables_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: _sc_tables_id_seq; Type: SEQUENCE SET; Schema: public; Owner: saltcorn
 --
 
 SELECT pg_catalog.setval('public._sc_tables_id_seq', 1, false);
 
 
 --
--- Name: _sc_views_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: _sc_views_id_seq; Type: SEQUENCE SET; Schema: public; Owner: saltcorn
 --
 
 SELECT pg_catalog.setval('public._sc_views_id_seq', 1, false);
 
 
 --
--- Name: users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: saltcorn
 --
 
 SELECT pg_catalog.setval('public.users_id_seq', 1, false);
 
 
 --
--- Name: _sc_config _sc_config_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_config _sc_config_pkey; Type: CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_config
@@ -684,7 +684,7 @@ ALTER TABLE ONLY public._sc_config
 
 
 --
--- Name: _sc_errors _sc_errors_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_errors _sc_errors_pkey; Type: CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_errors
@@ -692,7 +692,7 @@ ALTER TABLE ONLY public._sc_errors
 
 
 --
--- Name: _sc_fields _sc_fields_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_fields _sc_fields_pkey; Type: CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_fields
@@ -700,7 +700,7 @@ ALTER TABLE ONLY public._sc_fields
 
 
 --
--- Name: _sc_files _sc_files_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_files _sc_files_pkey; Type: CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_files
@@ -708,7 +708,7 @@ ALTER TABLE ONLY public._sc_files
 
 
 --
--- Name: _sc_migrations _sc_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_migrations _sc_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_migrations
@@ -716,7 +716,7 @@ ALTER TABLE ONLY public._sc_migrations
 
 
 --
--- Name: _sc_pages _sc_pages_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_pages _sc_pages_pkey; Type: CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_pages
@@ -724,7 +724,7 @@ ALTER TABLE ONLY public._sc_pages
 
 
 --
--- Name: _sc_plugins _sc_plugins_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_plugins _sc_plugins_pkey; Type: CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_plugins
@@ -732,7 +732,7 @@ ALTER TABLE ONLY public._sc_plugins
 
 
 --
--- Name: _sc_roles _sc_roles_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_roles _sc_roles_pkey; Type: CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_roles
@@ -740,7 +740,7 @@ ALTER TABLE ONLY public._sc_roles
 
 
 --
--- Name: _sc_session _sc_session_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_session _sc_session_pkey; Type: CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_session
@@ -748,7 +748,7 @@ ALTER TABLE ONLY public._sc_session
 
 
 --
--- Name: _sc_tables _sc_tables_name_key; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_tables _sc_tables_name_key; Type: CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_tables
@@ -756,7 +756,7 @@ ALTER TABLE ONLY public._sc_tables
 
 
 --
--- Name: _sc_tables _sc_tables_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_tables _sc_tables_pkey; Type: CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_tables
@@ -764,7 +764,7 @@ ALTER TABLE ONLY public._sc_tables
 
 
 --
--- Name: _sc_tenants _sc_tenants_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_tenants _sc_tenants_pkey; Type: CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_tenants
@@ -772,7 +772,7 @@ ALTER TABLE ONLY public._sc_tenants
 
 
 --
--- Name: _sc_views _sc_views_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_views _sc_views_pkey; Type: CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_views
@@ -780,7 +780,7 @@ ALTER TABLE ONLY public._sc_views
 
 
 --
--- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public.users
@@ -788,7 +788,7 @@ ALTER TABLE ONLY public.users
 
 
 --
--- Name: users users_unique_email; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: users users_unique_email; Type: CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public.users
@@ -796,35 +796,35 @@ ALTER TABLE ONLY public.users
 
 
 --
--- Name: _sc_IDX_session_expire; Type: INDEX; Schema: public; Owner: postgres
+-- Name: _sc_IDX_session_expire; Type: INDEX; Schema: public; Owner: saltcorn
 --
 
 CREATE INDEX "_sc_IDX_session_expire" ON public._sc_session USING btree (expire);
 
 
 --
--- Name: _sc_idx_field_table; Type: INDEX; Schema: public; Owner: postgres
+-- Name: _sc_idx_field_table; Type: INDEX; Schema: public; Owner: saltcorn
 --
 
 CREATE INDEX _sc_idx_field_table ON public._sc_fields USING btree (table_id);
 
 
 --
--- Name: _sc_idx_table_name; Type: INDEX; Schema: public; Owner: postgres
+-- Name: _sc_idx_table_name; Type: INDEX; Schema: public; Owner: saltcorn
 --
 
 CREATE INDEX _sc_idx_table_name ON public._sc_tables USING btree (name);
 
 
 --
--- Name: _sc_idx_view_name; Type: INDEX; Schema: public; Owner: postgres
+-- Name: _sc_idx_view_name; Type: INDEX; Schema: public; Owner: saltcorn
 --
 
 CREATE INDEX _sc_idx_view_name ON public._sc_views USING btree (name);
 
 
 --
--- Name: _sc_fields _sc_fields_table_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_fields _sc_fields_table_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_fields
@@ -832,7 +832,7 @@ ALTER TABLE ONLY public._sc_fields
 
 
 --
--- Name: _sc_files _sc_files_min_role_read_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_files _sc_files_min_role_read_fkey; Type: FK CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_files
@@ -840,7 +840,7 @@ ALTER TABLE ONLY public._sc_files
 
 
 --
--- Name: _sc_files _sc_files_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_files _sc_files_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_files
@@ -848,7 +848,7 @@ ALTER TABLE ONLY public._sc_files
 
 
 --
--- Name: _sc_pages _sc_pages_min_role_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_pages _sc_pages_min_role_fkey; Type: FK CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_pages
@@ -856,7 +856,7 @@ ALTER TABLE ONLY public._sc_pages
 
 
 --
--- Name: _sc_tables _sc_tables_min_role_read_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_tables _sc_tables_min_role_read_fkey; Type: FK CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_tables
@@ -864,7 +864,7 @@ ALTER TABLE ONLY public._sc_tables
 
 
 --
--- Name: _sc_tables _sc_tables_min_role_write_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_tables _sc_tables_min_role_write_fkey; Type: FK CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_tables
@@ -872,7 +872,7 @@ ALTER TABLE ONLY public._sc_tables
 
 
 --
--- Name: _sc_views _sc_views_min_role_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_views _sc_views_min_role_fkey; Type: FK CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_views
@@ -880,7 +880,7 @@ ALTER TABLE ONLY public._sc_views
 
 
 --
--- Name: _sc_views _sc_views_table_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: _sc_views _sc_views_table_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public._sc_views
@@ -888,7 +888,7 @@ ALTER TABLE ONLY public._sc_views
 
 
 --
--- Name: users users_role_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: users users_role_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: saltcorn
 --
 
 ALTER TABLE ONLY public.users
@@ -896,13 +896,12 @@ ALTER TABLE ONLY public.users
 
 
 --
--- Name: SCHEMA public; Type: ACL; Schema: -; Owner: postgres
+-- Name: SCHEMA public; Type: ACL; Schema: -; Owner: saltcorn
 --
 
 GRANT ALL ON SCHEMA public TO PUBLIC;
 
 
 --
--- PostgreSQL database dump complete
+-- saltcornQL database dump complete
 --
-
